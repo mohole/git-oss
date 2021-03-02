@@ -20,10 +20,10 @@
 
 ### Actions workflows
 * [React + GH pages](./workflows/react-pages.yml) - a ogni commit su `master` viene buildata un'applicazione React e pubblicata nella relativa Github Page.
-<!-- 
-* Test on PR - a ogni pull request su `master` vengono eseguiti unit test con Jest e E2E test con Cypress.
-* Flutter .apk - a ogni commit su `master` viene buildata un'applicazione Android da una codebase Flutter e il file `.apk` viene poi pubblicato nelle releases del repo.
--->
+* [React + GH pages + .env](./workflows/react-pages-env.yml) - come sopra ma con l'aggiunta di un file `.env` creato in fase dal server.
+* [Unit Test on PR](./workflows/react-unit-test.yml) - a ogni pull request su `master` vengono eseguiti unit test con Jest.
+* [Flutter .apk](./workflows/flutter-apk.yml) - a ogni commit su `master` viene buildata un'applicazione Android da una codebase Flutter e il file `.apk` viene poi pubblicato come artefatto nel server.
+
 
 ### License
-MIT
+MIT.
