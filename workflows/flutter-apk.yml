@@ -1,10 +1,8 @@
 name: Flutter .apk
 
 on:
-  workflow_run:
-    workflows: ["Bump version"]
-    types:
-      - completed
+  pull_request:
+    branches: [ master ]
         
 jobs:
   build:
